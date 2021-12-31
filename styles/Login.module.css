@@ -1,0 +1,38 @@
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+.rightGroup {
+  width: 720px;
+  margin-left: auto;
+  padding: 120px 120px 150px 140px;
+  box-shadow: 25px 4px 7px 0 rgba(0, 0, 0, 0.31);
+  background-image: radial-gradient(circle at 74% 13%, #ff600c, #fca326);
+  clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.leftGroup {
+  margin-right: auto;
+  width: 720px;
+  box-sizing: border-box;
+}
+
+.leftGroup_title {
+  color: #303030;
+  padding: 0;
+  margin: 7rem 0 0 0;
+}
+
+.leftGroup_description {
+  color: #292961;
+  padding: 0;
+  margin: 2px auto -70px auto;
+}
+
+.leftGroup_logo {
+  width: 620px;
+  height: 600px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 14px 5px 0 rgba(0, 0, 0, 0.25));
+}
