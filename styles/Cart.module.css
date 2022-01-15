@@ -38,36 +38,53 @@
 }
 
 .cart_input {
-  width: 97%;
-  height: 65px;
-  font-size: 24px;
-  padding-left: 8px;
-  border-radius: 10px;
-  border: solid 2px rgba(48, 48, 48, 0.4);
+  width: 90%;
+  height: 50px;
+  padding-left: 10px;
+  border-radius: 2px;
+  border: solid 1px rgba(0, 0, 0, 0.3);
   outline: none;
   font-family: inherit;
-  color: rgba(48, 48, 48, 0.36);
+  color: #333;
+  transition: all 0.5s ease;
 }
 
-.cart_btn {
-  width: 100%;
-  height: 70px;
-  margin-top: 50px;
-  border-radius: 8px;
+.cart_input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.cart_input:focus {
+  border: 2px solid #f96424;
+}
+
+.cart_btn__send,
+.cart_btn__show {
+  width: 90%;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #292961;
   color: #fff;
   outline: none;
   cursor: pointer;
   border: none;
-  font-size: 24px;
+  font-size: 20px;
   font-family: inherit;
-  /* text-transform: uppercase; */
-  transition: all 2ms ease;
+  transition: all 1s ease;
 }
 
-.cart_btn:hover {
-  background: #444486;
+.cart_btn__send:hover {
+  background: #f96424;
+}
+
+.cart_btn__show {
+  background: #6b4fbb;
+}
+
+.cart_btn__show:hover {
+  background: #f96424;
 }
 
 .cart_get__token {
@@ -76,4 +93,9 @@
   cursor: pointer;
   text-decoration: none;
   margin-top: 10px;
+  transition: all 0.5s ease;
+}
+
+.cart_get__token:hover {
+  color: #6b4fbb;
 }

@@ -30,7 +30,7 @@ export default function Cart() {
             onClick={() => {
               fetchUser(data.token, dispatch);
             }}
-            className={styles.cart_btn}
+            className={styles.cart_btn__send}
           >
             Submit
           </button>
@@ -40,15 +40,13 @@ export default function Cart() {
               color="#ff600c"
               height={40}
               width={40}
-              timeout={10000}
+              timeout={20000}
             />
           ) : data.error ? (
             <p style={{ color: '#FF5151' }}>{data.error}</p>
-          ) : (
-            <div>
-              <button>Show</button>
-            </div>
-          )}
+          ) : data.error === '' || data.error ? (
+            <button className={styles.cart_btn__show}>Show Profile Info</button>
+          ) : null}
         </div>
       </div>
       <a

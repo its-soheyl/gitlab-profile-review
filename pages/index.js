@@ -8,8 +8,6 @@ export default function Home() {
 
   const data = useSelector((state) => state.user);
 
-  console.log(data);
-
   return (
     <div>
       <Head>
